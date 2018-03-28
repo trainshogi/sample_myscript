@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true"/>
+    <title>MyScript_For_NKLab</title>
+    <link rel="stylesheet" href="bower_components/myscript/dist/myscript.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="display_edit.js"></script>
+    <script type="text/javascript" src="bower_components/pepjs/dist/pep.min.js"></script>
+    <script type="text/javascript" src="bower_components/myscript/dist/myscript.min.js"></script>
+</head>
+<body touch-action="none">
+    <div class="subbody">
+        <nav id="editornav">
+            <button class="action-button" id="clear" disabled></button>
+            <button class="action-button" id="undo" disabled></button>
+            <button class="action-button" id="redo" disabled></button>
+            <!--<div class="spacer"></div>-->
+            <!--<img src="../assets/img/undo.svg">-->
+            <!--<img src="../assets/img/redo.svg">-->
+            <select id="language" disabled></select>
+            <button class="action-label-button" id="convert" disabled>Convert</button>
+        </nav>
+        <div id="editor"></div>
+    </div><div class="subbody">
+        <nav id="resultnav">
+            <button class="action-button" id="result_edit" disabled></button>
+            <!--<button class="action-button" id="undo" disabled></button>-->
+            <!--<button class="action-button" id="redo" disabled></button>-->
+            <div class="spacer"></div>
+            <select id="service" disabled></select>
+            <button class="action-label-button" id="export" disabled>Export</button>
+        </nav>
+        <div id="result"></div>
+    </div>
+    <script type="text/javascript" src="text_edit.js"></script>
+</body>
+
+</html>
